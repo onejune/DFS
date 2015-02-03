@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76A8EDB5-9853-480E-8BEA-74B8B9CD66AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DFSystem</RootNamespace>
+    <AssemblyName>DFSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>D:\Program Files (x86)\DotNetBar\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UCComboBox">
+      <HintPath>bin\UCComboBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataCompile.cs" />
+    <Compile Include="DataCompileStartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCompileStartForm.Designer.cs">
+      <DependentUpon>DataCompileStartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCompileSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCompileSourceForm.Designer.cs">
+      <DependentUpon>SelectCompileSourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfConstruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfConstruct.Designer.cs">
+      <DependentUpon>SelfConstruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table.cs" />
+    <Compile Include="TableGenerateForDataCompile.cs" />
+    <Compile Include="TableSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableSetForm.Designer.cs">
+      <DependentUpon>TableSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExcel.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputWord.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunningForm.Designer.cs">
+      <DependentUpon>RunningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectColumnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectColumnsForm.Designer.cs">
+      <DependentUpon>SelectColumnsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SharedData.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_1.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_10.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_11_1.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_11_2.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_11_3.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_12.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_13.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_14.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_15.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_16.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_17.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_18.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_19.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_20.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_2.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_21.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_22.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_23.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_24.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_25.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_26.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_3.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_4.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_5.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_6.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_7.cs" />
+    <Compile Include="Tables\GeneticResources\GeneticResources4_9.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_3.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_4.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_5.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_1_6.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_2_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_2_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_3_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_3_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_4_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_4_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_5_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_5_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_6_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_6_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_7_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_7_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_8_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_8_2.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_9_1.cs" />
+    <Compile Include="Tables\ResearchBase\ResearchBase3_9_2.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_1.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_10_1.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_10_2.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_10_3.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_11.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_12.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_2.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_3.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_4.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_5.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_6.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_7.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_8.cs" />
+    <Compile Include="Tables\ResearchInstitution\ResearchInstitution1_9.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_10_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_10_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_11_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_11_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_12.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_13.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_14.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_15.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_1_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_1_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_2_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_2_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_3_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_3_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_4_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_4_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_5_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_5_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_6_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_6_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_7_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_7_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_8_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_8_2.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_9_1.cs" />
+    <Compile Include="Tables\ScientificInstrument\ResearchInstitution2_9_2.cs" />
+    <Compile Include="WordDocumentMerger.cs" />
+    <Compile Include="WordGeneration.cs" />
+    <EmbeddedResource Include="DataCompileStartForm.resx">
+      <DependentUpon>DataCompileStartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCompileSourceForm.resx">
+      <DependentUpon>SelectCompileSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfConstruct.resx">
+      <DependentUpon>SelfConstruct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableSetForm.resx">
+      <DependentUpon>TableSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RunningForm.resx">
+      <DependentUpon>RunningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectColumnsForm.resx">
+      <DependentUpon>SelectColumnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
